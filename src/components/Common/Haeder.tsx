@@ -11,8 +11,8 @@ function Haeder() {
     alert("준비중입니다.");
   };
   return (
-    <header className="fixed top-0 w-full p-4 flex justify-between items-center">
-      <h1>ChoEunSang</h1>
+    <header className="fixed top-0 w-full p-4 flex justify-between items-center sm:px-10">
+      <h1>Cho Eun Sang</h1>
       <div className="flex gap-5 items-center">
         <div className="flex gap-5 items-center max-sm:invisible">
           <Link href={"https://github.com/ChoEun-Sang"}>
