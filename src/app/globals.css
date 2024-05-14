@@ -49,16 +49,13 @@ body {
     scroll-snap-align: center;
   }
 
-  @media (max-width: 640px) {
-    p {
-      font-size: 14px;
-    }
-  }
-
   @media (max-width: 768px) {
     h1 {
       flex-shrink: 0;
       font-size: 24px;
+    }
+    p {
+      font-size: 14px;
     }
   }
 }
