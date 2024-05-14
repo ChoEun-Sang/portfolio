@@ -5,13 +5,16 @@ import Github from "@/assets/github.svg";
 import Velog from "@/assets/velog.svg";
 import LinkedIn from "@/assets/linkedin.svg";
 import Button from "./Button";
+import { useRouter } from "next/navigation";
 
 function Haeder() {
-  const onClickBtn = () => {
-    alert("준비중입니다.");
+  const router = useRouter();
+
+  const onClickBtnToContact = async () => {
+    router.push("/contact");
   };
   return (
-    <header className="fixed top-0 w-full p-4 flex justify-between items-center sm:px-10">
+    <header className="z-10 fixed top-0 w-full p-4 flex justify-between items-center sm:px-10 ">
       <h1>Cho Eun Sang</h1>
       <div className="flex gap-5 items-center">
         <div className="flex gap-5 items-center max-sm:invisible">
@@ -25,7 +28,7 @@ function Haeder() {
             <Image src={LinkedIn} alt="linkedin" width={30} height={30} />
           </Link>
         </div>
-        <Button onClick={onClickBtn} className="shrink-0">
+        <Button onClick={onClickBtnToContact} className="shrink-0">
           <span>연락처 남기기</span>
         </Button>
       </div>
