@@ -49,7 +49,7 @@ function Officener() {
           ))}
         </div>
       </div>
-      <div>
+      <div className="rounded-lg overflow-hidden">
         <Image
           src="/officener.png"
           width={270}
