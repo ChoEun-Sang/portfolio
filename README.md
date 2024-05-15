@@ -16,7 +16,7 @@ CREATE TABLE Contact (
 );
 ```
 
-## 주요 기능
+## 프로젝트 소개
 
 ### 1. 반응형 디자인
 CSS의 미디어 쿼리를 사용하여 화면 크기가 변경될 때 컨텐츠의 배치가 유연하게 조정됩니다.  \
@@ -24,7 +24,9 @@ CSS의 미디어 쿼리를 사용하여 화면 크기가 변경될 때 컨텐츠
 
 - 데스트탑 Footer 화면
 
-<img width="500" alt="데스크탑 화면" src="https://github.com/ChoEun-Sang/portfolio/assets/128155681/79c22420-d06f-4b94-bf1a-3585bfcb1c66">
+<img width="500" alt="데스크탑 화면" src="https://github.com/ChoEun-Sang/portfolio/assets/128155681/0d3d5bb6-2a70-44a0-9315-2d5b927795216">
+
+<br/>
 
 - 모바일 Footer 화면
   
@@ -36,9 +38,13 @@ CSS의 미디어 쿼리를 사용하여 화면 크기가 변경될 때 컨텐츠
 <img src="https://github.com/ChoEun-Sang/portfolio/assets/128155681/dc1e72d7-8d00-44b6-88bb-3f144c0660b6" alt="시험 화면 gif" width="300">
 
 ### 3, 연락처 등록/조회
-Supabase를 이용하여 연락처를 등록/조회 API를 만들었습니다. \
+Supabase를 이용하여 연락처 등록/조회 API를 만들었습니다. \
 연락처를 등록하면 등록된 연락처 목록이 조회돼 연락처가 등록된 것을 확인할 수 있습니다. \
 개인정보보호를 위해 이름과 연락처는 마스킹 처리한 후 화면에 보여집니다. 
+
+<img width="500" alt="데스크탑 화면" src="https://github.com/ChoEun-Sang/portfolio/assets/128155681/7482034c-240b-4251-89c7-1760621a2c1d">
+
+## 프로젝트 테스트
 
 ### clone project
 
