@@ -40,3 +40,21 @@ Supabase를 이용하여 연락처를 등록/조회 API를 만들었습니다. \
 연락처를 등록하면 등록된 연락처 목록이 조회돼 연락처가 등록된 것을 확인할 수 있습니다. \
 개인정보보호를 위해 이름과 연락처는 마스킹 처리한 후 화면에 보여집니다. 
 
+### clone project
+
+```bash
+$ git clone git@github.com:ChoEun-Sang/portfolio.git
+```
+
+### go to project
+```bash
+$ cd portfolio
+```
+### install npm
+```bash
+$ npm install
+```
+### start project
+```bash
+$ npm run dev
+```
