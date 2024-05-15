@@ -1,7 +1,7 @@
 # 포트폴리오
 > 개발자: 조은상 \
 > URL: https://choeunsang-portfolio.vercel.app/ \
-> 기술 스택: Next.js, Typescript, Tailwind Css, Supabase
+> 기술 스택: Next.js, Typescript, Tailwind CSS, Supabase
 
 
 ## 사이트맵
