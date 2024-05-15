@@ -62,7 +62,7 @@ function FoodieLog() {
           ))}
         </div>
       </div>
-      <div className="justify-end">
+      <div className="rounded-lg overflow-hidden">
         <Image
           src="/feed.png"
           width={270}

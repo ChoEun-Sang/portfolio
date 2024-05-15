@@ -55,7 +55,7 @@ function SweetHome() {
           ))}
         </div>
       </div>
-      <div>
+      <div className="rounded-lg overflow-hidden">
         <Image
           src="/sweetHome.png"
           width={333}
