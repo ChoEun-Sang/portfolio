@@ -2,7 +2,10 @@
 import { useState } from "react";
 import { client } from "@/lib/client";
 import { maskName, truncateContact } from "@/utility";
+import { useRouter } from "next/navigation";
+import Image from "next/image";
 import Button from "../Common/Button";
+import ArrowLeft from "@/assets/ArrowLeft.svg";
 
 interface ContactState {
   id: number;
@@ -15,6 +18,8 @@ function Contact() {
     name: "",
     contact: "",
   });
+
+  const router = useRouter();
 
   const getContacts = async () => {
     const { data, error } = await client.from("contact").select();
@@ -52,9 +57,20 @@ function Contact() {
     });
   };
 
+  const onClickBack = () => {
+    router.back();
+  };
+
   return (
     <main className="py-10 flex justify-center items-center">
-      <section className="p-10 md:w-1/2 max-md:w-3/4 flex flex-col justify-center items-center bg-gray-700 rounded-lg shadow-xl">
+      <section className="relative p-10 md:w-1/2 max-md:w-3/4 flex flex-col justify-center items-center bg-gray-700 rounded-lg shadow-xl">
+        <button
+          type="button"
+          onClick={onClickBack}
+          className=" absolute top-3 left-3"
+        >
+          <Image src={ArrowLeft} width={20} height={20} alt="뒤로가기" />
+        </button>
         <h1>연락처 등록</h1>
         <form className="flex flex-col gap-5 mt-6">
           <div>
