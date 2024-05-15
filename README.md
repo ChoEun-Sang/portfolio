@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 포트폴리오
+> 개발자: 조은상 \
+> URL: https://choeunsang-portfolio.vercel.app/ \
+> 기술 스택: Next.js, Typescript, Tailwind Css, Supabase
 
-## Getting Started
 
-First, run the development server:
+## 사이트맵
+<img width="500" alt="사이트맵" src="https://github.com/ChoEun-Sang/portfolio/assets/128155681/19f14ade-5670-4edb-9fa3-df504949ac63">
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## DB 스키마
+```
+CREATE TABLE Contact (
+    id INT PRIMARY KEY,
+    name TEXT,
+    contact TEXT
+);
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 주요 기능
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 1. 반응형 디자인
+CSS의 미디어 쿼리를 사용하여 화면 크기가 변경될 때 컨텐츠의 배치가 유연하게 조정됩니다.  \
+어느 디바이스에서든 포트폴리오 내용을 확인할 수 있도록 만들었습니다.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- 데스트탑 Footer 화면
 
-## Learn More
+<img width="500" alt="데스크탑 화면" src="https://github.com/ChoEun-Sang/portfolio/assets/128155681/79c22420-d06f-4b94-bf1a-3585bfcb1c66">
 
-To learn more about Next.js, take a look at the following resources:
+- 모바일 Footer 화면
+  
+<img width="300" alt="데스크탑 화면" src="https://github.com/ChoEun-Sang/portfolio/assets/128155681/423ff7b0-25f7-4857-9076-8a8e21bddbaf">
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2. Full Page Scroll
+스크롤할 때 뷰포트에 맞게 다음 섹션을 이동하여 내용을 한눈에 보기 쉽습니다.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<img src="https://github.com/ChoEun-Sang/portfolio/assets/128155681/dc1e72d7-8d00-44b6-88bb-3f144c0660b6" alt="시험 화면 gif" width="300">
 
-## Deploy on Vercel
+### 3, 연락처 등록/조회
+Supabase를 이용하여 연락처를 등록/조회 API를 만들었습니다. \
+연락처를 등록하면 등록된 연락처 목록이 조회돼 연락처가 등록된 것을 확인할 수 있습니다. \
+개인정보보호를 위해 이름과 연락처는 마스킹 처리한 후 화면에 보여집니다. 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
